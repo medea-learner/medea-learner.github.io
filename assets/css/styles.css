@@ -1,12 +1,3 @@
-.pattern {
-/*background-image: url("https://placehold.co/1280x720");*/
-background-image: url("assets/images/background-image.jpg");
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-height: 100vh;
-opacity: 5;
-}
 
 .custom-font-1 {
 font-family: "Raleway", sans-serif;

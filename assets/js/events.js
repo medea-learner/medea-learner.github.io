@@ -35,3 +35,11 @@ const closeMenu = document.getElementById("close-menu");
 closeMenu.addEventListener("click", () => {
     document.getElementById("menu").classList.toggle("hidden");
 });
+
+const menuToggleLinks = document.getElementsByClassName("close-menu");
+for (let i = 0; i < menuToggleLinks.length; i++) {
+    menuToggleLinks[i].addEventListener("click", () => {
+        document.getElementById("menu").classList.toggle("hidden");
+        console.log("clicked");
+    });
+}

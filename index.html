@@ -31,15 +31,12 @@
 
     <!-- Header -->
 
-    <header class="pattern">
+    <header class="">
       <div class="px-6 mx-auto">
         <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-6">
           <div class="flex h-16 items-center justify-between">
             <div class="flex-1 md:flex md:items-center md:gap-12">
-              <a class="block" href="#">
-                <span class="sr-only">Home</span>
-                <img class="w-auto h-6 sm:h-12" src="#" alt="" />
-              </a>
+              
             </div>
 
             <div class="flex lg:hidden px-6">
@@ -48,7 +45,7 @@
                 type="button"
                 class="-m-2.5 inline-flex items-center justify-center rounded-md p-1.5 text-gray-300"
               >
-                <span class="sr-only">Open main menu</span>
+                <span class="sr-only">@</span>
                 <svg
                   class="h-6 w-6"
                   fill="none"
@@ -110,15 +107,13 @@
                   class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-10 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
                 >
                   <div class="flex lg:hidden px-8 items-center justify-between">
-                    <a href="#" class="-m-1.5 p-1.5">
-                      <span class="sr-only">Home</span>
-                    </a>
+                    
                     <button
                       type="button"
                       id="close-menu"
                       class="inline-flex items-center justify-center rounded-md p-1.5 text-gray-700"
                     >
-                      <span class="sr-only">Close menu</span>
+                      <span class="sr-only">X</span>
                       <svg
                         class="h-6 w-6"
                         fill="none"
@@ -141,25 +136,25 @@
                       <div class="space-y-2 py-6">
                         <a
                           href="#about"
-                          class="-mx-3 text-sm font-semibold leading-6 text-center text-gray-900 block px-4 py-2 hover:bg-gray-100"
+                          class="close-menu -mx-3 text-sm font-semibold leading-6 text-center text-gray-900 block px-4 py-2 hover:bg-gray-100"
                         >
                           About
                         </a>
                         <a
                           href="#skill-set"
-                          class="-mx-3 text-sm font-semibold leading-6 text-center text-gray-900 block px-4 py-2 hover:bg-gray-100"
+                          class="close-menu -mx-3 text-sm font-semibold leading-6 text-center text-gray-900 block px-4 py-2 hover:bg-gray-100"
                         >
                           Skills
                         </a>
                         <a
                           href="#projects"
-                          class="-mx-3 text-sm font-semibold leading-6 text-center text-gray-900 block px-4 py-2 hover:bg-gray-100"
+                          class="close-menu -mx-3 text-sm font-semibold leading-6 text-center text-gray-900 block px-4 py-2 hover:bg-gray-100"
                         >
                           Projects
                         </a>
                         <a
                           href="#contact"
-                          class="-mx-3 text-sm font-semibold leading-6 text-center text-gray-900 block px-4 py-2 hover:bg-gray-100"
+                          class="close-menu -mx-3 text-sm font-semibold leading-6 text-center text-gray-900 block px-4 py-2 hover:bg-gray-100"
                         >
                           Contact
                         </a>
@@ -173,11 +168,11 @@
           </div>
         </div>
 
-        <div class="flex flex-col items-center py-6">
+        <div class="bg-gray-50 flex flex-col items-center py-40">
           <div
-            class="mx-auto max-w-screen-xl px-4 justify-center text-center flex h-screen items-center"
+            class="mx-auto max-w-screen-xl px-4 justify-center text-center flex items-center"
           >
-            <div class="mx-auto max-w-3xl text-center -mt-60">
+            <div class="mx-auto max-w-3xl text-center">
               <h1
                 class="text-gray-500 bg-clip-text font-normal lg:text-7xl text-3xl tracking-wider custom-font-1"
               >
@@ -199,40 +194,38 @@
 
     <!-- About Section -->
 
-    <section id="about" class="flex flex-row">
-      <div class="basis-1/4">
+    <section id="about" class="container grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 py-10 px-10">
+      <div class="">
         <img
             alt="my picture"
             src="assets/images/profile_image_380x600.png"
-            class="float-right px-10"
+            class="mx-auto"
           />
-        </div>
-            <div class="basis-3/4 mx-10">
-              <h2 class="text-2xl font-bold sm:text-3xl text-center">
-                About me
-              </h2>
+      </div>
+      <div class="">
+          <h2 class="text-2xl font-bold mt-5 sm:text-3xl text-center">
+            About me
+          </h2>
 
-              <p class="mt-4 pr-16 text-gray-600 indent-4">
-                I am a highly skilled <strong>Backend Developer</strong> and <strong>Machine Learning Engineer</strong> with a master's degree in Intelligent Computer Systems, specializing in building robust and scalable solutions with advanced technologies. With 3 years of experience, I excel in backend development, intelligent systems, and data analysis.
-              </p>
-              <p class="mt-4 pr-16 text-gray-600 indent-4">
-                Proficient in Python, Java, and Php, I have expertise in designing RESTful APIs, implementing efficient database schemas, and ensuring data integrity and security. I have successfully delivered various backend projects, from large-scale enterprise systems to API development for mobile applications, following software development best practices.
-              </p>
-              <p class="mt-4 pr-16 text-gray-600 indent-4">
-                My master's degree equipped me with a strong foundation in intelligent algorithms, machine learning, and data analysis, enabling me to integrate intelligent systems into backend applications for data-driven decision making and automation. My master's final project focused on interpreting scenes by exploiting their high features.
-              </p>
-              <p class="mt-4 pr-16 text-gray-600 indent-4">
-                Collaboration and effective communication are paramount in my work philosophy. I collaborate seamlessly with cross-functional teams, translating complex business requirements into technical specifications to deliver high-quality solutions that exceed expectations.
-              </p>
-              <p class="mt-4 pr-16 text-gray-600 indent-4">
-                As a lifelong learner, I stay updated with the latest industry trends and technologies. I seek opportunities to leverage my expertise in backend development and intelligent systems to enable organizations to harness the power of data for improved decision making and operational efficiency.
-              </p>
+          <p class="mt-4 text-gray-600 indent-4 text-justify">
+            I am a highly skilled <strong>Backend Developer</strong> and <strong>Machine Learning Engineer</strong> with a master's degree in Intelligent Computer Systems, specializing in building robust and scalable solutions with advanced technologies. With 3 years of experience, I excel in backend development, intelligent systems, and data analysis.
+          </p>
+          <p class="mt-4 text-gray-600 indent-4 text-justify">
+            Proficient in Python, Java, and Php, I have expertise in designing RESTful APIs, implementing efficient database schemas, and ensuring data integrity and security. I have successfully delivered various backend projects, from large-scale enterprise systems to API development for mobile applications, following software development best practices.
+          </p>
+          <p class="mt-4 text-gray-600 indent-4 text-justify">
+            My master's degree equipped me with a strong foundation in intelligent algorithms, machine learning, and data analysis, enabling me to integrate intelligent systems into backend applications for data-driven decision making and automation. My master's final project focused on interpreting scenes by exploiting their high features.
+          </p>
+          <p class="mt-4 text-gray-600 indent-4 text-justify">
+            Collaboration and effective communication are paramount in my work philosophy. I collaborate seamlessly with cross-functional teams, translating complex business requirements into technical specifications to deliver high-quality solutions that exceed expectations.
+          </p>
+          <p class="mt-4 text-gray-600 indent-4 text-justify">
+            As a lifelong learner, I stay updated with the latest industry trends and technologies. I seek opportunities to leverage my expertise in backend development and intelligent systems to enable organizations to harness the power of data for improved decision making and operational efficiency.
+          </p>
               
-            </div>
-          </div>
-          </div>
-        </div>
-      </section>
+      </div>
+         
+    </section>
 
     <!-- End of About Section -->
 
@@ -360,7 +353,7 @@
             <li>
               <div class="relative overflow-hidden bg-cover bg-center h-64">
                 <img src="assets/images/scenes-interpreter-tool.png" alt="Scenes-Interpreter-Tool" class="w-full h-full object-cover opacity-75" loading="lazy">
-                <div class="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end opacity-0 transition-opacity duration-300 hover:opacity-90">
+                <div class="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end opacity-90 transition-opacity duration-300 hover:opacity-90 lg:opacity-0 lg:hover:opacity-90">
                   <a href="https://github.com/medea-learner/Scenes-Interpreter-Tool" class="text-white hover:underline text-center" target="_blank">View Project</a>
                 </div>
               </div>
@@ -371,19 +364,19 @@
             <li>
               <div class="relative overflow-hidden bg-cover bg-center h-64">
                 <img src="assets/images/steganography.jpg" alt="Scenes-Interpreter-Tool" class="w-full h-full object-cover opacity-75" loading="lazy">
-                <div class="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end opacity-0 transition-opacity duration-300 hover:opacity-90">
-                  <a href="https://github.com/medea-learner/Steganography-with-LSB-Substitution-and-LSB-Matching" class="text-white hover:underline text-center" target="_blank">View Project</a>
+                <div class="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end opacity-90 transition-opacity duration-300 hover:opacity-90 lg:opacity-0 lg:hover:opacity-90">
+                  <a href="https://github.com/medea-learner/Steganography-with-LSB-Substitution-and-LSB-Matching" class="text-white hover:underline text-center">View Project</a>
                 </div>
               </div>
               <h3 class="text-lg font-sans italic font-medium mt-2 text-center">Steganography</h3>
-              
             </li>
+            
       
             <li>
 
               <div class="relative overflow-hidden bg-cover bg-center h-64">
                 <img src="assets/images/arabic-pos-tagger.png" alt="Scenes-Interpreter-Tool" class="w-full h-full object-cover opacity-75" loading="lazy">
-                <div class="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end opacity-0 transition-opacity duration-300 hover:opacity-90">
+                <div class="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end opacity-90 transition-opacity duration-300 hover:opacity-90 lg:opacity-0 lg:hover:opacity-90">
                   <a href="https://github.com/medea-learner/Arabic-PoS-Tagger" class="text-white hover:underline text-center">View Project</a>
                 </div>
               </div>
