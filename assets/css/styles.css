@@ -27,3 +27,8 @@ transition: opacity 0.3s ease;
 #backToTopBtn:hover {
 opacity: 1;
 }
+
+.active-tab {
+    background-color: #4CAF50;
+    color: white;
+}

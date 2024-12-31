@@ -335,107 +335,164 @@
 
     <!-- Projects Section -->
 
-    <section  id="projects">
-        <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
-          <header class="text-center">
-            <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">
-              My projects
-            </h2>
-      
-            <p class="mt-4 text-gray-500">
-              Throughout my academic journey and professional career, I've been actively involved in building and 
-              collaborating on a diverse array of projects. These endeavors span various domains, showcasing my passion 
-              for applying technology to solve real-world challenges. Below, I highlight a selection of projects that 
-              demonstrate my skills, creativity, and commitment to delivering impactful solutions.
-            </p>
-          </header>
-      
-          <ul class="grid grid-cols-1 gap-4 mt-8 lg:grid-cols-3">
-            <li>
-              <div class="relative overflow-hidden bg-cover bg-center h-64">
-                <img src="assets/images/scenes-interpreter-tool.png" alt="Scenes-Interpreter-Tool" class="w-full h-full object-cover opacity-75" loading="lazy">
-                <div class="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end opacity-90 transition-opacity duration-300 hover:opacity-90 lg:opacity-0 lg:hover:opacity-90">
-                  <a href="https://github.com/medea-learner/Scenes-Interpreter-Tool" class="text-white hover:underline text-center" target="_blank">View Project</a>
-                </div>
+    <section id="projects">
+      <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
+        <header class="text-center">
+          <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">My Projects</h2>
+          <p class="mt-4 text-gray-500">
+            Throughout my journey, I've built and collaborated on projects spanning multiple domains, showcasing my skills and passion for solving real-world challenges. Below are categorized highlights.
+          </p>
+        </header>
+    
+        <div class="mt-8">
+          <!-- Tab navigation -->
+          <div class="flex justify-center mb-4 space-x-4">
+            <button class="tab-btn px-4 py-2 bg-gray-100 hover:bg-gray-300 text-gray-900 rounded-md" onclick="showCategory('web')">Web Apps</button>
+            <button class="tab-btn px-4 py-2 bg-gray-100 hover:bg-gray-300 text-gray-900 rounded-md" onclick="showCategory('mobile')">Mobile Apps</button>
+            <button class="tab-btn px-4 py-2 bg-gray-100 hover:bg-gray-300 text-gray-900 rounded-md" onclick="showCategory('ai')">AI/ML Apps</button>
+            <button class="tab-btn px-4 py-2 bg-gray-100 hover:bg-gray-300 text-gray-900 rounded-md" onclick="showCategory('desktop')">Desktop Apps</button>
+          </div>          
+    
+          <!-- Web Apps Section -->
+          <div id="web" class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+            <div class="relative bg-white border rounded-lg shadow-sm hover:shadow-md">
+              <img src="assets/images/print-online-app.png" alt="Print Online App" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-medium">
+                  <a href="https://print-online-service.netlify.app" target="_blank" class="text-blue-600 hover:underline mt-4 inline-block">
+                    Print Online
+                  </a>
+                </h3>
+                <p class="text-gray-500 text-sm mt-2">
+                  A platform connecting students with local printing stores, enabling them to print documents efficiently and order already in-sale articles.
+                </p>
+                <p class="text-gray-400 text-xs mt-2">
+                  <strong>Frontend Technologies:</strong> React, Tailwind <br>
+                  <strong>Backend Technologies:</strong> Symfony, PostgreSQL
+                </p>
               </div>
-              <h3 class="text-lg font-sans italic font-medium mt-2 text-center">Scenes Interpreter Tool</h3>
-              
-            </li>
-      
-            <li>
-              <div class="relative overflow-hidden bg-cover bg-center h-64">
-                <img src="assets/images/steganography.jpg" alt="Scenes-Interpreter-Tool" class="w-full h-full object-cover opacity-75" loading="lazy">
-                <div class="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end opacity-90 transition-opacity duration-300 hover:opacity-90 lg:opacity-0 lg:hover:opacity-90">
-                  <a href="https://github.com/medea-learner/Steganography-with-LSB-Substitution-and-LSB-Matching" class="text-white hover:underline text-center">View Project</a>
-                </div>
+            </div>
+    
+            <div class="relative bg-white border rounded-lg shadow-sm hover:shadow-md">
+              <img src="assets/images/fatwa-app.png" alt="Fatwa App" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-medium">
+                  <a href="https://fatwa.composdz.com/app" target="_blank" class="text-blue-600 hover:underline mt-4 inline-block">
+                    Fatwa
+                  </a>
+                </h3>
+                <p class="text-gray-500 text-sm mt-2">
+                  A web app offering Islamic legal opinions and knowledge for users worldwide.
+                </p>
+                <p class="text-gray-400 text-xs mt-2">Technologies: React, Tailwind</p>
               </div>
-              <h3 class="text-lg font-sans italic font-medium mt-2 text-center">Steganography</h3>
-            </li>
-            
-      
-            <li>
-
-              <div class="relative overflow-hidden bg-cover bg-center h-64">
-                <img src="assets/images/arabic-pos-tagger.png" alt="Scenes-Interpreter-Tool" class="w-full h-full object-cover opacity-75" loading="lazy">
-                <div class="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end opacity-90 transition-opacity duration-300 hover:opacity-90 lg:opacity-0 lg:hover:opacity-90">
-                  <a href="https://github.com/medea-learner/Arabic-PoS-Tagger" class="text-white hover:underline text-center">View Project</a>
-                </div>
+            </div>
+    
+            <div class="relative bg-white border rounded-lg shadow-sm hover:shadow-md">
+              <img src="assets/images/project_planning_tool_dashboard.png" alt="Project Planning Tool" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-medium">
+                  <a href="https://mohamedder.pythonanywhere.com" target="_blank" class="text-blue-600 hover:underline mt-4 inline-block">
+                    Project Planning Tool
+                  </a>
+                </h3>
+                <p class="text-gray-500 text-sm mt-2">
+                  A web-based tool that allows users to manage their projects, generate AI-based summaries, export details in multiple formats, and send project details via email ...
+                </p>
+                <p class="text-gray-400 text-xs mt-2">
+                  <strong>Frontend Technologies:</strong> React, Tailwind <br>
+                  <strong>Backend Technologies:</strong> Django, DRF, PostgreSQL
+                </p>
               </div>
-              <h3 class="text-lg font-sans italic font-medium mt-2 text-center">Arabic POS Tagger</h3>
-             
-            </li>
-
-            <li>
-
-              <div class="relative overflow-hidden bg-cover bg-center h-64">
-                <img src="assets/images/fatwa-app.png" alt="Fatwa Application" class="w-full h-full object-cover opacity-75" loading="lazy">
-                <div class="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end opacity-90 transition-opacity duration-300 hover:opacity-90 lg:opacity-0 lg:hover:opacity-90">
-                  <a href="https://fatwa.composdz.com/app" class="text-white hover:underline text-center">View Project</a>
-                </div>
+            </div>
+          </div>
+    
+          <!-- Mobile Apps Section -->
+          <div id="mobile" class="grid grid-cols-1 gap-4 lg:grid-cols-3 hidden">
+            <div class="relative bg-white border rounded-lg shadow-sm hover:shadow-md">
+              <img src="assets/images/fatwa-mobile-app.png" alt="Fatwa Mobile App" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-medium">
+                  <a href="/assets/images/fatwa-mobile-app.png" target="_blank" class="text-blue-600 hover:underline mt-4 inline-block">
+                    Fatwa
+                  </a>
+                </h3>
+                <p class="text-gray-500 text-sm mt-2">
+                  A mobile app complementing the Fatwa web platform for on-the-go access.
+                </p>
+                <p class="text-gray-400 text-xs mt-2">Technologies: React Native</p>
               </div>
-              <h3 class="text-lg font-sans italic font-medium mt-2 text-center">Fatwa App</h3>
-             
-            </li>
-            <li>
-              <div class="relative overflow-hidden bg-cover bg-center h-64">
-                <img src="assets/images/print-online-app.png" alt="Print Online" class="w-full h-full object-cover opacity-75" loading="lazy">
-                <div class="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end opacity-90 transition-opacity duration-300 hover:opacity-90 lg:opacity-0 lg:hover:opacity-90">
-                  <a href="https://print-online-service.netlify.app" class="text-white hover:underline text-center">View Project</a>
-                </div>
+            </div>
+    
+            <div class="relative bg-white border rounded-lg shadow-sm hover:shadow-md">
+              <img src="assets/images/compose-food.png" alt="Compose Food Mobile App" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-medium">
+                  <a href="/assets/images/compose-food.png" target="_blank" class="text-blue-600 hover:underline mt-4 inline-block">
+                    Compose Food
+                  </a>
+                </h3>
+                <p class="text-gray-500 text-sm mt-2">
+                  A mobile app to help users compose meals and track nutritional intake.
+                </p>
+                <p class="text-gray-400 text-xs mt-2">Technologies: React Native</p>
               </div>
-              <h3 class="text-lg font-sans italic font-medium mt-2 text-center">Print Online App</h3>
-             
-            </li>
-            <li>
-              <div class="relative overflow-hidden bg-cover bg-center h-64">
-                <img src="assets/images/compose-food.png" alt="Print Online" class="w-full h-full object-cover opacity-75" loading="lazy">
-                <div class="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end opacity-90 transition-opacity duration-300 hover:opacity-90 lg:opacity-0 lg:hover:opacity-90">
-                  <a href="/assets/images/compose-food.png" class="text-white hover:underline text-center">View Project</a>
-                </div>
+            </div>
+          </div>
+    
+          <!-- AI/ML Apps Section -->
+          <div id="ai" class="grid grid-cols-1 gap-4 lg:grid-cols-3 hidden">
+            <div class="relative bg-white border rounded-lg shadow-sm hover:shadow-md">
+              <img src="assets/images/scenes-interpreter-tool.png" alt="Scenes Interpreter Tool" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-medium">
+                  <a href="https://github.com/medea-learner/Scenes-Interpreter-Tool" target="_blank" class="text-blue-600 hover:underline mt-4 inline-block">
+                    Scenes Interpreter Tool
+                  </a>
+                </h3>
+                <p class="text-gray-500 text-sm mt-2">
+                  A web-app for scene interpretation and understanding using Machine Learning.
+                </p>
+                <p class="text-gray-400 text-xs mt-2">Technologies: Python, TensorFlow, LLM, CNN, RNN</p>
               </div>
-              <h3 class="text-lg font-sans italic font-medium mt-2 text-center">Compose Food Mobile App</h3>
-            </li>
-            <li>
-              <div class="relative overflow-hidden bg-cover bg-center h-64">
-                <img src="assets/images/fatwa-mobile-app.png" alt="Print Online" class="w-full h-full object-cover opacity-75" loading="lazy">
-                <div class="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end opacity-90 transition-opacity duration-300 hover:opacity-90 lg:opacity-0 lg:hover:opacity-90">
-                  <a href="/assets/images/fatwa-mobile-app.png" class="text-white hover:underline text-center">View Project</a>
-                </div>
+            </div>
+          </div>
+    
+          <!-- Desktop Apps Section -->
+          <div id="desktop" class="grid grid-cols-1 gap-4 lg:grid-cols-3 hidden">
+            <div class="relative bg-white border rounded-lg shadow-sm hover:shadow-md">
+              <img src="assets/images/steganography.jpg" alt="Steganography" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-medium">
+                  <a href="https://github.com/medea-learner/Steganography-with-LSB-Substitution-and-LSB-Matching" target="_blank" class="text-blue-600 hover:underline mt-4 inline-block">
+                    Steganography
+                  </a>
+                </h3>
+                <p class="text-gray-500 text-sm mt-2">
+                  A desktop application for hiding messages within images using steganography techniques.
+                </p>
+                <p class="text-gray-400 text-xs mt-2">Technologies: C#, Visual Studio</p>
               </div>
-              <h3 class="text-lg font-sans italic font-medium mt-2 text-center">Fatwa Mobile App</h3>
-            </li>
-            <li>
-              <div class="relative overflow-hidden bg-cover bg-center h-64">
-                <img src="assets/images/project_planning_tool_dashboard.png" alt="Project Planning Tool" class="w-full h-full object-cover opacity-75" loading="lazy">
-                <div class="absolute inset-0 bg-black bg-opacity-50 p-4 flex flex-col justify-end opacity-90 transition-opacity duration-300 hover:opacity-90 lg:opacity-0 lg:hover:opacity-90">
-                  <a href="https://mohamedder.pythonanywhere.com" class="text-white hover:underline text-center">View Project</a>
-                </div>
+            </div>
+    
+            <div class="relative bg-white border rounded-lg shadow-sm hover:shadow-md">
+              <img src="assets/images/arabic-pos-tagger.png" alt="Arabic POS Tagger" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h3 class="text-lg font-medium">
+                  <a href="https://github.com/medea-learner/Arabic-PoS-Tagger" target="_blank" class="text-blue-600 hover:underline mt-4 inline-block">
+                    Arabic POS Tagger
+                  </a>
+                </h3>
+                <p class="text-gray-500 text-sm mt-2">
+                  A desktop application for part-of-speech tagging in Arabic texts.
+                </p>
+                <p class="text-gray-400 text-xs mt-2">Technologies: Python, NLTK</p>
               </div>
-              <h3 class="text-lg font-sans italic font-medium mt-2 text-center">Project Planning Tool</h3>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
     <!-- End of Projects Section -->
 
