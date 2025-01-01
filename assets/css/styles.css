@@ -29,6 +29,6 @@ opacity: 1;
 }
 
 .active-tab {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4CAF50 !important;
+    color: white !important;
 }
