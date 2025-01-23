@@ -510,10 +510,21 @@
             </div>
     
             <div class="relative bg-white border rounded-lg shadow-sm hover:shadow-md">
-              <img src="assets/images/compose-food.png" alt="Compose Food Mobile App" class="w-full h-48 object-cover">
+              <!-- Trigger Element (Image) -->
+              <img 
+                src="assets/images/compose-food.png" 
+                alt="Compose Food Mobile App" 
+                class="w-full h-48 object-cover cursor-pointer" 
+                onclick="openVideoModal()"
+              >
               <div class="p-4">
                 <h3 class="text-lg font-medium">
-                  <a href="/assets/images/compose-food.png" target="_blank" class="text-blue-600 hover:underline mt-4 inline-block">
+                  <!-- Trigger Element (App Name) -->
+                  <a 
+                    href="javascript:void(0);" 
+                    class="text-blue-600 hover:underline mt-4 inline-block" 
+                    onclick="openVideoModal()"
+                  >
                     Compose Food
                   </a>
                 </h3>
@@ -523,6 +534,22 @@
                 <p class="text-gray-400 text-xs mt-2">Technologies: React Native</p>
               </div>
             </div>
+            
+          <div 
+            id="videoModal" 
+            class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden"
+            onclick="closeVideoModal()" <!-- Close modal when clicking outside -->
+          >
+            <!-- Video -->
+            <video 
+              controls 
+              autoplay 
+              class="bg-white rounded-lg w-11/12 md:w-2/3 lg:w-1/2 h-auto max-h-[300px] sm:max-h-[400px] md:max-h-[500px] lg:max-h-[600px] xl:max-h-[700px]"
+              onclick="event.stopPropagation()" <!-- Prevent click propagation to modal background -->
+            >
+              <source src="assets/videos/compose-food-demo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
     
           <!-- AI/ML Apps Section -->

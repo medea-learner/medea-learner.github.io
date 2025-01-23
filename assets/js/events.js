@@ -58,4 +58,13 @@ function showCategory(category) {
     // Add active-tab class to the clicked button
     event.target.classList.add('active-tab');
 }
-  
+
+// Open Modal Function
+function openVideoModal() {
+  document.getElementById('videoModal').classList.remove('hidden');
+}
+
+// Close Modal Function
+function closeVideoModal() {
+  document.getElementById('videoModal').classList.add('hidden');
+}
